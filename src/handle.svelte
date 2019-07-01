@@ -11,7 +11,6 @@
 
 </style>
 
-<svelte:window on:keydown={handleKeyDown} />
 <div>
     The key code pressed is: {key}
 </div>

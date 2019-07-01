@@ -1,7 +1,7 @@
 <script>
     import Card from './card.svelte'
 
-    export let data;
+    export let openings;
 </script>
 
 <style>
@@ -9,7 +9,7 @@
 </style>
 
 <ul>
-    {#each data as op}
+    {#each openings as op}
         <Card {...op}/>
     {/each}
 </ul>

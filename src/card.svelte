@@ -1,6 +1,6 @@
 <script>
+    export let isActive;
     export let cover;
-    export let isActive = false;
     export let name;
 </script>
 
@@ -9,7 +9,7 @@
         height: 300px;
         width: 240px;
         list-style: none;
-        border: 2px solid transparent;
+        border: 5px solid transparent;
         display: inline-block;
         text-align: center;
     }
@@ -20,11 +20,11 @@
     }
 
     .active {
-        border-color: white;
+        border-color: black;
     }
 </style>
 
 <li class="card-list-item {isActive ? 'active' : ''}">
-    <img src={cover} alt="Kek"  />
+    <img src={cover} alt="Kek" />
     <h4>{name}</h4>
 </li>
